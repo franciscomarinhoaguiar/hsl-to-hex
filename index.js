@@ -1,11 +1,15 @@
 var toRgb = require('hsl-to-rgb-for-reals');
+var debug = require('debug');
 function max(val, n) {
+  debug('ensuring ' + val + ' is no more than ' + n);
   return val > n ? n : val;
 }
 function min(val, n) {
+  debug('ensuring ' + val + ' is no less than ' + n);
   return val < n ? n : val;
 }
 function cycle(val) {
+  debug('resolving ' + val + ' within the 0-359 range ' + n);
   val = max(val, 1e7);
   val = min(val, -1e7);
   while (val < 0) {

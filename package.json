@@ -10,6 +10,7 @@
   "author": "francisco aguiar",
   "license": "ISC",
   "dependencies": {
+    "debug": "^4.3.1",
     "hsl-to-rgb-for-reals": "^1.1.1"
   },
   "devDependencies": {
